@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.css" />
+    <script src="/static/js/jquery-3.3.1.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+
+    <style>
+        .div_box {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>静态模态窗口</h1>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-show=true data-backdrop="static" data-keyboard=false>模态对话框</button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title" id="myModalLabel">模态框标题</h4>
+                    </div>
+                    <div class="modal-body">模态框内容</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" id="commit_btn">提交更改</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $("#commit_btn").on("click", function(){
+        alert("sasasfaf");
+    })
+</script>
+</html>
